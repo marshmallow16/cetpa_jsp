@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+<title>Jsp page</title>
+</head>
+<body>
+<h1>Hello jsp</h1>
+<%
+out.println("Hello Cetpa");//out is implicit object
+%>
+<br>
+<%=
+"Hey PS"
+%>
+<br>
+<%= "sum= "+sum (3,5)
+%>
+<br>
+<%!
+int sum (int x,int y)
+{
+	int s=x+y;
+	return s;
+}
+%>
+</body>
+</html>

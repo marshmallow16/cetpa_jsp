@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<style>
+p{display:none;}
+</style>
+<script>
+$(document).ready(function(){
+ $("#n").blur(function (){
+ alert("bb");
+ });
+});
+</script>
+</head>
+<body>
+<div id="d">LOAD<b>HERE</b></div>
+<form action="home.html" id="frm">
+N1:<input type="text" name="n" id="n"><span id="e" class="err"></span>    <!-- inline element -->
+N2:<input type="text" name="p" id="p"><span id="f" class="err"></span>
+SUM:<input type="text" name="s" id="s">
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>

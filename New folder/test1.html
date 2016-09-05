@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<style>
+p{
+display:none;
+}
+</style>
+<script src="jquery.js"></script>
+
+<script>
+$(document).ready(function(){
+$(document).click(function(){
+	$("p").slideToggle();
+});
+});
+</script>
+</head>
+<body>
+<p>paragraph</p>
+<button type="button" id="bt1">Hide/Show</button>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<style>
+p{
+display:none;
+}
+</style>
+<script src="jquery.js"></script>
+
+<script>
+$(document).ready(function(){
+$("form").submit(function(){
+$n=$("#n").val();   
+$m=$("#p").val();
+$s=parseInt($n)+parseInt($m);
+$("#s").val($s);
+return false;
+});
+
+$("button").click(function(){
+$b=$("#d").html("<h1>Hello</h1>");
+alert($b);
+
+});
+
+});
+</script>
+</head>
+<body>
+<div id="d">load <b>here</b></div>
+<form action="home.html">
+N1:<input type="text" name="n" id="n">
+N2:<input type="text" name="p" id="p">
+Sum:<input type="text" name="s" id="s">
+<input type="submit" value="sum">
+</form>
+<button type="button">click</button>
+</body>
+</html>

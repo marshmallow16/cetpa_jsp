@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<style>
+p{display:none;}
+</style>
+<script>
+$(document).ready(function(){
+  $("form").submit(function(){         // $("#bt1,#bt2") //$("p").hide(1000);//time in ms//$("*").hide()-> hides everything//$("p").slideUp();//$("p").slideToggle();
+  $n=$("#n").val();
+  $p=$("#p").val();
+  if($n=="" || $n==null)
+    {$("#e").text("Input the name");
+	 return false;
+    }	 
+  
+  //$s=parseInt($p)+parseInt($n);
+  //$("#s").val($s);
+  return false;
+});
+$("button").click(function(){
+<div id="d">LOAD<b>HERE</b></div>
+<form action="home.html">
+N1:<input type="text" name="n" id="n"><span id="e" class="err"></span>    <!-- inline element -->
+N2:<input type="text" name="p" id="p">
+SUM:<input type="text" name="s" id="s">
+<input type="submit" value="Submit">
+  $b=$("#d").text("<h1>Hello</h1>");              <!--$b=$("#d").text(); -->         
+  alert($b);
+});
+});
+</script>
+</head>
+<body>
+</form>
+<input type="button" value="Click"></button>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.err{
+color:red;
+}
+</style>
+<script src="jquery.js"></script>
+
+<script>
+$(document).ready(function(){
+$("#n").blur(function(){
+alert("blur");
+
+});
+});
+</script>
+</head>
+<body>
+<div id="d">load <b>here</b></div>
+<form action="home.html" id="frm">
+N1:<input type="text" name="n" id="n"><span id="e" class="err"></span>
+N2:<input type="text" name="p" id="p"><span id="pass" class="err"></span>
+Sum:<input type="text" name="s" id="s">
+<input type="submit" value="sum">
+</form>
+<button type="button">click</button>
+</body>
+</html>

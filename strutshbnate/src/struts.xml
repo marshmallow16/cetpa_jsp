@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">  <!-- compulsary -->
+
+<struts>
+<package name="default" extends="struts-default">
+
+
+
+<action name="login" class="MyTest" method="insert"> <!-- same as in index -->
+<result name="display">display.jsp</result>
+<result name="false">NotWelcome.jsp</result>
+</action>
+
+<action name="delete" class="MyTest" method="delete"> <!-- same as in index -->
+<result name="display">display.jsp</result>
+<result name="false">NotWelcome.jsp</result>
+</action>
+
+<action name="edit" class="MyTest" method="edit"> <!-- same as in index -->
+<result name="edit">edit.jsp</result>
+<result name="false">NotWelcome.jsp</result>
+</action>
+
+<action name="update" class="MyTest" method="update"> <!-- same as in index -->
+<result name="display">display.jsp</result>
+<result name="false">NotWelcome.jsp</result>
+</action>
+
+<action name="display" class="MyTest" method="display"> <!-- same as in index -->
+<result name="display">display.jsp</result>
+
+</action>
+</package>
+</struts>

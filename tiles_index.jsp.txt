@@ -1,0 +1,10 @@
+<div id = "container">
+
+<div id="header">
+<p>header</p>
+</header>
+<div id="menu">
+<p>Menu</p>
+</div>
+</div>
+</div>

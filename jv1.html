@@ -1,0 +1,29 @@
+<html>
+<head>
+<style>
+p{
+display:none;}
+</style>
+<script src="jquery.js">
+</script>
+<script>
+$(document).ready(function(){
+ $("form").submit (function(){
+ var n1=$("#n1").val();
+ var n2=$("#n2").val();
+ $("#n3").val(n1+n2);
+ return false
+ });
+ )};
+</script>
+</head>
+<body>
+<form action="home.html">
+N1:<input type="text" name="name" id="n1">
+N2:<input type="text" name="name" id="n2">
+sum:<input type="text" name="name" id="n3">
+<input type="button" value="submit">
+</form>
+
+</body>
+</html>
